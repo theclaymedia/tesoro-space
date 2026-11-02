@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Samples | Tesoro</title>
+  <meta name="description" content="Request a complimentary sample set of Tesoro's metals, fabrics and stones.">
+  <link rel="preload" href="assets/fonts/jost-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div data-site-header></div>
+
+  <main id="content" tabindex="-1">
+    <section class="page-head">
+      <div class="container page-head__inner">
+        <div>
+          <p class="eyebrow">Metal · Fabric · Stone</p>
+          <h1>Free samples.</h1>
+        </div>
+        <p>See and feel each finish before you decide. We send a complimentary sample set of our metals, fabrics and stones.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" aria-label="Sample request">
+      <div class="container two-col">
+        <div>
+          <div data-picks></div>
+          <div class="pick-actions">
+            <button type="button" data-select-all>Select all</button>
+            <button type="button" data-select-none>Clear</button>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div data-form-wrap>
+            <h2>Where should we send them?</h2>
+            <form data-form novalidate>
+              <p class="field-error" data-error role="alert" hidden>Choose at least one sample.</p>
+              <div class="field-row">
+                <div class="field"><label for="s-name">Name</label><input id="s-name" name="name" autocomplete="name" required></div>
+                <div class="field"><label for="s-phone">Phone</label><input id="s-phone" name="phone" type="tel" autocomplete="tel"></div>
+              </div>
+              <div class="field"><label for="s-email">Email</label><input id="s-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="s-street">Street address</label><input id="s-street" name="street" autocomplete="street-address" required></div>
+              <div class="field-row">
+                <div class="field"><label for="s-city">City</label><input id="s-city" name="city" autocomplete="address-level2" required></div>
+                <div class="field"><label for="s-state">State / province</label><input id="s-state" name="state" autocomplete="address-level1" required></div>
+              </div>
+              <div class="field-row">
+                <div class="field"><label for="s-zip">Postal code</label><input id="s-zip" name="zip" autocomplete="postal-code" required></div>
+                <div class="field"><label for="s-country">Country</label><input id="s-country" name="country" autocomplete="country-name" required></div>
+              </div>
+              <div class="field">
+                <label for="s-region">Your region</label>
+                <select id="s-region" name="region" required>
+                  <option value="">Select the nearest region</option>
+                </select>
+              </div>
+              <div class="rep-card" data-rep-card hidden></div>
+              <button class="btn btn--block" type="submit">Request samples</button>
+              <p class="form-note">Mockup: this form does not send anything yet.</p>
+            </form>
+          </div>
+          <div class="form-sent" data-sent tabindex="-1" hidden></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="js/site.js"></script>
+  <script src="js/samples.js"></script>
+</body>
+</html>

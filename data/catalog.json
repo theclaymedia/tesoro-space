@@ -1,0 +1,84 @@
+{
+  "_comment": "Site config layered on top of shopify-products.json. In the Shopify theme these become metafields / theme settings.",
+
+  "optionLabels": {
+    "Metal Color": "Metal",
+    "Fabric - Wood": "Fabric / Wood"
+  },
+
+  "finishes": {
+    "High Gloss White":           { "slug": "high-gloss-white",          "group": "Metal" },
+    "Satin Silver":               { "slug": "satin-silver",              "group": "Metal" },
+    "Matte Black":                { "slug": "matte-black",               "group": "Metal" },
+    "Brass":                      { "slug": "brass",                     "group": "Metal" },
+    "Ipe":                        { "slug": "ipe",                       "group": "Wood",   "label": "Ipê" },
+    "Caprino Aruba Sunbrella":    { "slug": "caprino-aruba-sunbrella",   "group": "Fabric", "label": "Caprino Aruba" },
+    "Bliss Linen Sunbrella":      { "slug": "bliss-linen-sunbrella",     "group": "Fabric", "label": "Bliss Linen" },
+    "Charter Cloud Sunbrella":    { "slug": "charter-cloud-sunbrella",   "group": "Fabric", "label": "Charter Cloud" },
+    "Tailored Guava Sunbrella":   { "slug": "tailored-guava-sunbrella",  "group": "Fabric", "label": "Tailored Guava" },
+    "Pure Black Polish Quartz":   { "slug": "pure-black-polish-quartz",  "group": "Stone" },
+    "Calacatta Viola":            { "slug": "calacatta-viola",           "group": "Stone" },
+    "Pure White Quartz":          { "slug": "pure-white-quartz",         "group": "Stone" },
+    "Calacatta Marble":           { "slug": "calacatta-marble",          "group": "Stone" }
+  },
+
+  "_baseFinish": "The finish the existing live-site photos were shot in. Selecting it shows the real photos.",
+  "baseFinish": {
+    "Metal": "High Gloss White",
+    "Fabric": "Caprino Aruba Sunbrella",
+    "Stone": "Pure Black Polish Quartz",
+    "Wood": "Ipe"
+  },
+
+  "_imageOption": "Which option group swaps the main image. Metal unless the piece is mostly upholstery.",
+  "imageOption": {
+    "default": "Metal",
+    "outdoor-lounge-sofa": "Fabric",
+    "outdoor-corner-lounge": "Fabric",
+    "outdoor-tanning-lounge": "Fabric",
+    "duradero-chaise-set": "Fabric"
+  },
+
+  "_finishImages": "handle -> finish value -> image path. Convention: assets/products/<handle>/finishes/<finish-slug>.jpg. Anything missing renders a placeholder.",
+  "finishImages": {},
+
+  "collections": [
+    { "handle": "seating", "title": "Seating", "cover": "outdoor-lounge-sofa",         "blurb": "Chairs, sofas, sectionals, chaises and stools." },
+    { "handle": "tables",  "title": "Tables",  "cover": "reunion-table-and-chair-set", "blurb": "Dining, drink, BBQ and bar tables." },
+    { "handle": "sets",    "title": "Sets",    "cover": "bar",                         "blurb": "Tables with chairs, bars with stools, and chaise sets." }
+  ],
+
+  "_allCollection": "The 'all' view (collection.html?c=all) is built in code, not listed above.",
+  "allCollection": { "handle": "all", "title": "All pieces", "blurb": "Every piece, handmade to order in Los Angeles." },
+
+  "featured": [
+    "outdoor-lounge-sofa",
+    "outdoor-chair",
+    "drink-cart",
+    "outdoor-tanning-lounge",
+    "reunion-table-and-chair-set",
+    "bbq-table"
+  ],
+
+  "studio": {
+    "name": "LA Studio",
+    "address": ["2624 Yates Avenue", "Commerce, CA 90040"],
+    "tel": "(323) 721-1900",
+    "email": "info@tesorospace.com"
+  },
+
+  "general": { "label": "General info", "role": "Customer service", "email": "info@tesorospace.com", "phone": "626.922.2119" },
+
+  "reps": [
+    { "region": "Los Angeles",          "name": "Vicent V",       "email": "vicentv@tesorospace.com", "phone": "626.922.2119" },
+    { "region": "Toronto",              "name": "James Loppie",   "email": "jamesl@tesorospace.com",  "phone": "647.466.1600" },
+    { "region": "Chicago",              "name": "Allen Meyer",    "email": "allenm@tesorospace.com",  "phone": "847.606.6272" },
+    { "region": "Miami – Calabasas",    "name": "Jamie Luterman", "email": "jaimel@tesorospace.com",  "phone": "267.242.9417" }
+  ],
+
+  "social": {
+    "Instagram": "https://www.instagram.com/tesoro_space",
+    "Facebook": "https://facebook.com/tesorospace",
+    "LinkedIn": "https://www.linkedin.com/company/tesorospace/"
+  }
+}
