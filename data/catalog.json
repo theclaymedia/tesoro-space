@@ -51,6 +51,18 @@
   "_allCollection": "The 'all' view (collection.html?c=all) is built in code, not listed above.",
   "allCollection": { "handle": "all", "title": "All pieces", "blurb": "Every piece, handmade to order in Los Angeles." },
 
+  "_heroPieces": "Product handles shown in the slowly panning homepage hero, in order. Each uses its first photo. Edit this list to change the hero; no code change needed.",
+  "heroPieces": [
+    "outdoor-lounge-chair",
+    "reunion-double-table-and-chair-set",
+    "outdoor-tanning-lounge",
+    "drink-cart",
+    "bar",
+    "outdoor-lounge-sofa",
+    "bbq-table",
+    "reunion-table-and-chair-set"
+  ],
+
   "featured": [
     "outdoor-lounge-sofa",
     "outdoor-chair",
