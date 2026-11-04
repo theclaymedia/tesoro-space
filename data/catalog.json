@@ -40,7 +40,13 @@
   },
 
   "_finishImages": "handle -> finish value -> image path. Convention: assets/products/<handle>/finishes/<finish-slug>.jpg. Anything missing renders a placeholder.",
-  "finishImages": {},
+  "finishImages": {
+    "outdoor-chair": {
+      "Matte Black":  "assets/products/outdoor-chair/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/outdoor-chair/finishes/satin-silver.jpg",
+      "Brass":        "assets/products/outdoor-chair/finishes/brass.jpg"
+    }
+  },
 
   "collections": [
     { "handle": "seating", "title": "Seating", "cover": "outdoor-lounge-sofa",         "blurb": "Chairs, sofas, sectionals, chaises and stools." },

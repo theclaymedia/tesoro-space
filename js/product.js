@@ -45,7 +45,7 @@ Tesoro.init().then(({ products, catalog, byHandle }) => {
     const b = e.target.closest('button');
     if (!b) return;
     photoIndex = +b.dataset.i;
-    viewingPhotos = true;
+    viewingPhotos = photoIndex !== 1; // thumbnail 1 is the main view, so it follows the selected finish
     render();
   });
 
@@ -98,7 +98,9 @@ Tesoro.init().then(({ products, catalog, byHandle }) => {
     if (value === base || viewingPhotos) {
       placeholder.hidden = true;
       showPhoto(img(p.handle, photoIndex), photoAlt);
-      note.textContent = value === base ? '' : `Photographed in ${finishLabel(catalog, base)}. ${finishLabel(catalog, value)} image to come.`;
+      note.textContent = value === base ? ''
+        : supplied ? `Gallery photos are shown in ${finishLabel(catalog, base)}.`
+        : `Photographed in ${finishLabel(catalog, base)}. ${finishLabel(catalog, value)} image to come.`;
     } else if (supplied) {
       placeholder.hidden = true;
       showPhoto(supplied, `${p.title} in ${finishLabel(catalog, value)}`);
