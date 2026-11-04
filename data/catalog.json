@@ -65,6 +65,61 @@
       "Bliss Linen Sunbrella":    "assets/products/outdoor-tanning-lounge/finishes/bliss-linen-sunbrella.jpg",
       "Charter Cloud Sunbrella":  "assets/products/outdoor-tanning-lounge/finishes/charter-cloud-sunbrella.jpg",
       "Tailored Guava Sunbrella": "assets/products/outdoor-tanning-lounge/finishes/tailored-guava-sunbrella.jpg"
+    },
+    "bar": {
+      "Matte Black": "assets/products/bar/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/bar/finishes/satin-silver.jpg",
+      "Brass": "assets/products/bar/finishes/brass.jpg"
+    },
+    "reunion-bar": {
+      "Matte Black": "assets/products/reunion-bar/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/reunion-bar/finishes/satin-silver.jpg",
+      "Brass": "assets/products/reunion-bar/finishes/brass.jpg"
+    },
+    "drink-cart": {
+      "Matte Black": "assets/products/drink-cart/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/drink-cart/finishes/satin-silver.jpg",
+      "Brass": "assets/products/drink-cart/finishes/brass.jpg"
+    },
+    "entertaining-lux-series-outdoor-drink-table": {
+      "Matte Black": "assets/products/entertaining-lux-series-outdoor-drink-table/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/entertaining-lux-series-outdoor-drink-table/finishes/satin-silver.jpg",
+      "Brass": "assets/products/entertaining-lux-series-outdoor-drink-table/finishes/brass.jpg"
+    },
+    "outdoor-chair-2": {
+      "Matte Black": "assets/products/outdoor-chair-2/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/outdoor-chair-2/finishes/satin-silver.jpg",
+      "Brass": "assets/products/outdoor-chair-2/finishes/brass.jpg"
+    },
+    "outdoor-lounge-chair": {
+      "Matte Black": "assets/products/outdoor-lounge-chair/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/outdoor-lounge-chair/finishes/satin-silver.jpg",
+      "Brass": "assets/products/outdoor-lounge-chair/finishes/brass.jpg"
+    },
+    "outdoor-table": {
+      "Matte Black": "assets/products/outdoor-table/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/outdoor-table/finishes/satin-silver.jpg",
+      "Brass": "assets/products/outdoor-table/finishes/brass.jpg"
+    },
+    "reunion-double-table-and-chair-set": {
+      "Matte Black": "assets/products/reunion-double-table-and-chair-set/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/reunion-double-table-and-chair-set/finishes/satin-silver.jpg",
+      "Brass": "assets/products/reunion-double-table-and-chair-set/finishes/brass.jpg"
+    },
+    "reunion-table-and-chair-set": {
+      "Matte Black": "assets/products/reunion-table-and-chair-set/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/reunion-table-and-chair-set/finishes/satin-silver.jpg",
+      "Brass": "assets/products/reunion-table-and-chair-set/finishes/brass.jpg"
+    },
+    "small-drink-table": {
+      "Matte Black": "assets/products/small-drink-table/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/small-drink-table/finishes/satin-silver.jpg",
+      "Brass": "assets/products/small-drink-table/finishes/brass.jpg"
+    },
+    "table-set": {
+      "Matte Black": "assets/products/table-set/finishes/matte-black.jpg",
+      "Satin Silver": "assets/products/table-set/finishes/satin-silver.jpg",
+      "Brass": "assets/products/table-set/finishes/brass.jpg"
     }
   },
 
