@@ -45,6 +45,26 @@
       "Matte Black":  "assets/products/outdoor-chair/finishes/matte-black.jpg",
       "Satin Silver": "assets/products/outdoor-chair/finishes/satin-silver.jpg",
       "Brass":        "assets/products/outdoor-chair/finishes/brass.jpg"
+    },
+    "outdoor-lounge-sofa": {
+      "Bliss Linen Sunbrella":    "assets/products/outdoor-lounge-sofa/finishes/bliss-linen-sunbrella.jpg",
+      "Charter Cloud Sunbrella":  "assets/products/outdoor-lounge-sofa/finishes/charter-cloud-sunbrella.jpg",
+      "Tailored Guava Sunbrella": "assets/products/outdoor-lounge-sofa/finishes/tailored-guava-sunbrella.jpg"
+    },
+    "outdoor-corner-lounge": {
+      "Bliss Linen Sunbrella":    "assets/products/outdoor-corner-lounge/finishes/bliss-linen-sunbrella.jpg",
+      "Charter Cloud Sunbrella":  "assets/products/outdoor-corner-lounge/finishes/charter-cloud-sunbrella.jpg",
+      "Tailored Guava Sunbrella": "assets/products/outdoor-corner-lounge/finishes/tailored-guava-sunbrella.jpg"
+    },
+    "duradero-chaise-set": {
+      "Bliss Linen Sunbrella":    "assets/products/duradero-chaise-set/finishes/bliss-linen-sunbrella.jpg",
+      "Charter Cloud Sunbrella":  "assets/products/duradero-chaise-set/finishes/charter-cloud-sunbrella.jpg",
+      "Tailored Guava Sunbrella": "assets/products/duradero-chaise-set/finishes/tailored-guava-sunbrella.jpg"
+    },
+    "outdoor-tanning-lounge": {
+      "Bliss Linen Sunbrella":    "assets/products/outdoor-tanning-lounge/finishes/bliss-linen-sunbrella.jpg",
+      "Charter Cloud Sunbrella":  "assets/products/outdoor-tanning-lounge/finishes/charter-cloud-sunbrella.jpg",
+      "Tailored Guava Sunbrella": "assets/products/outdoor-tanning-lounge/finishes/tailored-guava-sunbrella.jpg"
     }
   },
 
