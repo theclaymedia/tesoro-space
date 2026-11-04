@@ -40,12 +40,10 @@ Tesoro.init().then(({ products, catalog, byHandle }) => {
     <button type="button" aria-label="View image ${i + 1} of ${p.images.length}" data-i="${i + 1}">
       <img src="${img(p.handle, i + 1)}" alt="" loading="lazy" width="1600" height="1600">
     </button>`).join('');
-  if (p.images.length < 2) thumbs.hidden = true;
   thumbs.addEventListener('click', e => {
     const b = e.target.closest('button');
     if (!b) return;
     photoIndex = +b.dataset.i;
-    viewingPhotos = photoIndex !== 1; // thumbnail 1 is the main view, so it follows the selected finish
     render();
   });
 
@@ -72,11 +70,9 @@ Tesoro.init().then(({ products, catalog, byHandle }) => {
 
   const driverGroup = catalog.imageOption[p.handle] || catalog.imageOption.default;
   const driver = p.options.find(o => o.values.some(v => finish(catalog, v).group === driverGroup)) || p.options[0];
-  let viewingPhotos = false; // true after a thumbnail click: show the photo even if the finish has no image yet
 
   form.addEventListener('change', e => {
     selected[e.target.name] = e.target.value;
-    if (e.target.name === driver.name) viewingPhotos = false;
     render();
   });
 
@@ -93,14 +89,17 @@ Tesoro.init().then(({ products, catalog, byHandle }) => {
     const group = finish(catalog, value).group;
     const base = catalog.baseFinish[group];
     const supplied = (catalog.finishImages[p.handle] || {})[value];
+    const isBase = value === base;
+
+    // One image per variant: the extra views only exist in the base finish, so hide them elsewhere.
+    if (!isBase) photoIndex = 1;
+    thumbs.hidden = !isBase || p.images.length < 2;
     const photoAlt = `${p.title}, image ${photoIndex}`;
 
-    if (value === base || viewingPhotos) {
+    if (isBase) {
       placeholder.hidden = true;
       showPhoto(img(p.handle, photoIndex), photoAlt);
-      note.textContent = value === base ? ''
-        : supplied ? `Gallery photos are shown in ${finishLabel(catalog, base)}.`
-        : `Photographed in ${finishLabel(catalog, base)}. ${finishLabel(catalog, value)} image to come.`;
+      note.textContent = '';
     } else if (supplied) {
       placeholder.hidden = true;
       showPhoto(supplied, `${p.title} in ${finishLabel(catalog, value)}`);
