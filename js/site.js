@@ -50,6 +50,7 @@ const Tesoro = (() => {
     ['Seating', 'collection.html?c=seating'],
     ['Tables', 'collection.html?c=tables'],
     ['Sets', 'collection.html?c=sets'],
+    ['Designers', 'collaborations.html'],
     ['Samples', 'samples.html'],
     ['About', 'about.html'],
     ['Contact', 'contact.html'],
@@ -102,7 +103,7 @@ const Tesoro = (() => {
             </div>
             <div>
               <h2>Collection</h2>
-              <ul>${NAV.slice(0, 4).map(([t, h]) => `<li><a href="${h}">${t}</a></li>`).join('')}<li><a href="collection.html?c=all">All pieces</a></li></ul>
+              <ul>${NAV.slice(0, 5).map(([t, h]) => `<li><a href="${h}">${t}</a></li>`).join('')}<li><a href="collection.html?c=all">All pieces</a></li></ul>
             </div>
             <div>
               <h2>${esc(s.name)}</h2>

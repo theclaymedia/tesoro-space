@@ -77,6 +77,13 @@ python3 -m http.server 8000
 - Product pages: 21 in total. `sample-sets` is a free sample product, not
   furniture.
 - About, Contact, and Samples (the free metal/fabric/stone sample set).
+- **Designers** (`collaborations.html`, nav label "Designers"): new, not on the
+  live site. Agreed with Vicent on 11/11: a top-level nav entry, designer
+  profiles with short bios and example pieces. It expands the existing brand
+  rather than starting a new one. Content is `catalog.collaborations`; the two
+  profiles are **sample placeholders** (`sample: true`) until Vicent has spoken
+  to the real designers. The header collapses to the hamburger at 1400px
+  because seven nav items don't fit beside the logo below that.
 - The live `/blogs/news` has no posts and isn't linked from anywhere, so
   **drop it**.
 

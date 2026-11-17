@@ -144,6 +144,41 @@
     "reunion-table-and-chair-set"
   ],
 
+  "_collaborations": "Designer collaboration section (decided with Vicent, 11/11). SAMPLE CONTENT: the two designers are placeholders until Vicent has talked to the real ones. Set sample:false on a designer once the profile is real. Adding a designer = one more object here, no code change. In Shopify: a metaobject definition 'designer' plus a 'Designer Collection' product tag.",
+  "collaborations": {
+    "title": "Tesoro, in collaboration.",
+    "blurb": "Selected designers, each with a small collection built by hand at our Los Angeles studio.",
+    "intro": "Tesoro has always been about one piece at a time. Designer collaborations extend that: a guest designer brings a point of view, and we bring the studio, the materials and the making. Each piece is built to order in stainless steel, Ipê, Sunbrella and natural stone, like everything we make.",
+    "designers": [
+      {
+        "handle": "designer-one",
+        "sample": true,
+        "name": "Designer One",
+        "role": "Interior designer",
+        "location": "Los Angeles, CA",
+        "bio": "Sample profile. A short biography goes here: two or three sentences on the designer's background, their approach to outdoor living and what drew them to working with Tesoro.",
+        "pieces": [
+          { "title": "Example lounge chair",  "type": "Seating", "note": "Stainless steel frame, Sunbrella seat" },
+          { "title": "Example side table",    "type": "Tables",  "note": "Ipê top, matte black base" },
+          { "title": "Example daybed",        "type": "Seating", "note": "Brass frame, Sunbrella cushion" }
+        ]
+      },
+      {
+        "handle": "designer-two",
+        "sample": true,
+        "name": "Designer Two",
+        "role": "Furniture designer",
+        "location": "Chicago, IL",
+        "bio": "Sample profile. A short biography goes here: two or three sentences on the designer's background, their approach to outdoor living and what drew them to working with Tesoro.",
+        "pieces": [
+          { "title": "Example dining table",  "type": "Tables",  "note": "Stone top, satin silver base" },
+          { "title": "Example bar stool",     "type": "Seating", "note": "Stainless steel, Sunbrella seat" },
+          { "title": "Example console",       "type": "Tables",  "note": "Ipê and brass" }
+        ]
+      }
+    ]
+  },
+
   "featured": [
     "outdoor-lounge-sofa",
     "outdoor-chair",
